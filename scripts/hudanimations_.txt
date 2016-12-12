@@ -1,0 +1,267 @@
+
+
+event LevelInit
+{
+//	Runevent ChatBGColor 0.0
+}
+
+event ChatBGColor
+{
+	Animate	HudChat						bgcolor		"ChatBg"		linear 0.0 0.0
+	Animate	HudChat						bgcolor		"ChatBg"		linear 0.0 100.0
+	
+	Animate	HudChatHistory				bgcolor		"ChatBg"		linear 0.0 0.0
+	Animate	HudChatHistory				bgcolor		"ChatBg"		linear 0.0 100.0
+	
+	RunEvent ChatBGColorLoop 0.1
+}
+
+event SetHudChatAlphaLoop
+{
+	RunEvent ChatBGColorLoop 0.1
+}
+
+//Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	Animate PlayerStatusHealthValue		Fgcolor		"Buff"			Linear 0.0 0.0
+	Animate PlayerStatusHealthValue		Fgcolor		"BuffDark"		Linear 0.0 0.5
+	Animate PlayerStatusHealthValue		Fgcolor		"Buff"			Linear 0.5 0.5
+	
+	Animate PlayerStatusHealthValueBg	alpha		"0"				Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBgBuff	alpha	"255"			Linear 0.0 0.0
+	
+	Runevent HudHealthBonusPulse	1
+}
+
+
+event HudHealthBonusPulseStop
+{
+	Stopevent HudHealthBonusPulse 0.0
+	Animate PlayerStatusHealthValue		Fgcolor		"Health"		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBg	alpha		"255"				Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBgBuff	alpha	"0"					Linear 0.0 0.0
+}
+
+//===========================================
+
+//Health Dying Pulse
+event HudHealthDyingPulse
+{
+	Animate PlayerStatusHealthValue		Fgcolor		"Red"			Linear 0.0 0.0
+	Animate PlayerStatusHealthValue		Fgcolor		"DarkRed"		Linear 0.0 0.5
+	Animate PlayerStatusHealthValue		Fgcolor		"Red"			Linear 0.5 0.5
+	
+	Animate PlayerStatusHealthValueBg	alpha		"0"				Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBgHurt	alpha	"255"			Linear 0.0 0.0
+
+	
+	Runevent HudHealthDyingPulse	1
+}
+
+event HudHealthDyingPulseStop
+{
+	Animate PlayerStatusHealthValue		Fgcolor		"Health"		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBg	alpha		"255"				Linear 0.0 0.0
+	Animate PlayerStatusHealthValueBgHurt	alpha	"0"					Linear 0.0 0.0
+
+	Stopevent HudHealthDyingPulse 0
+}
+
+event HudLowAmmoPulse
+{
+	Animate AmmoInClip				Fgcolor		"Red"				Linear 0.0 0.0
+	Animate AmmoInReserve			Fgcolor		"Red"				Linear 0.0 0.0
+	Animate AmmoNoClip				Fgcolor		"Red"				Linear 0.0 0.0
+	
+	Animate AmmoInClip				Fgcolor		"DarkRed"			Linear 0.0 0.5
+	Animate AmmoInReserve			Fgcolor		"DarkRed"			Linear 0.0 0.5
+	Animate AmmoNoClip				Fgcolor		"DarkRed"			Linear 0.0 0.5
+	
+	Animate AmmoInClip				Fgcolor		"Red"				Linear 0.5 0.5
+	Animate AmmoInReserve			Fgcolor		"Red"				Linear 0.5 0.5
+	Animate AmmoNoClip				Fgcolor		"Red"				Linear 0.5 0.5
+
+	Runevent HudLowAmmoPulse	1
+}
+
+event HudLowAmmoPulseStop
+{
+	Animate AmmoInClip				Fgcolor		"Ammo"				Linear 0.0 0.0
+	Animate AmmoInReserve			Fgcolor		"AmmoReserve"		Linear 0.0 0.0
+	Animate AmmoNoClip				Fgcolor		"Ammo"				Linear 0.0 0.0
+	Stopevent HudLowAmmoPulse 0
+
+}
+//===========================================
+
+
+// Spy Disguise
+event HudSpyDisguiseChanged
+{
+}
+
+event HudSpyDisguiseHide
+{
+}
+
+event HudSpyDisguiseFadeIn
+{
+}
+
+event HudSpyDisguiseFadeOut
+{
+}
+
+//===========================================
+
+event ActiveTimerHighlight
+{
+	Animate	TimePanelValue	Alpha	255		Linear 0.1 0.1
+	Animate TimePanelValue	Alpha	200		Linear 0.3 0.1
+
+	Animate TimePanelValue	Alpha	255		Linear 0.5 0.1
+	Animate TimePanelValue	Alpha	200		Linear 0.7 0.1
+
+	Animate TimePanelValue	Alpha	255		Linear 0.9 0.1
+	Animate TimePanelValue	Alpha	200		Linear 1.1 0.1
+
+	Animate TimePanelValue	Alpha	255		Linear 1.3 0.3
+	
+}
+event ActiveTimerDim
+{
+	// Slow fade out
+	Animate TimePanelValue	Alpha	200		Linear 0.0 0.4
+}
+
+event OvertimeLabelPulseRed
+{
+	Animate	OvertimeLabel 	FgColor	TanLight	Linear 0.0 0.3
+	Animate	OvertimeLabel 	FgColor	Red			Linear 0.3 0.3
+	RunEvent OvertimeLabelPulseRed 0.6
+}
+
+event SuddenDeathLabelPulseRed
+{
+	Animate	SuddenDeathLabel FgColor	TanLight	Linear 0.0 0.3
+	Animate	SuddenDeathLabel FgColor	Red			Linear 0.3 0.3
+	RunEvent SuddenDeathLabelPulseRed 0.2
+}
+
+
+
+event RDPositiveScorePulse
+{
+	Animate Score FgColor	"Green"						Linear 0.0 0.0
+	Animate Score FgColor	"Secondary_Text"			Linear 0.1 0.2
+
+	Animate Score Position	"4 0"						Deaccel 0.0 0.05
+	Animate Score Position	"4 3"						Accel 0.05 0.2
+
+	Animate ScoreShadow FgColor	"0 0 0 200"				Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"				Accel 0.1 0.2
+}
+
+event RDNegativeScorePulse
+{
+	Animate Score FgColor	"Red"						Linear 0.0 0.0
+	Animate Score FgColor	"Secondary_Text"			Linear 0.1 0.2
+
+	Animate Score Position	"4 0"						Deaccel 0.0 0.05
+	Animate Score Position	"4 3"						Accel 0.05 0.2
+
+	Animate ScoreShadow FgColor	"0 0 0 200"				Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"				Accel 0.1 0.2
+}
+
+
+
+//===========================================
+
+event MMenu_PlayList_Expand
+{
+	Animate	SidebarContainer		xpos		0					Spline 0.0 0.3
+	Animate	AchievementsButton		xpos		110					Spline 0.0 0.3
+
+	Animate	TopBarContainer			ypos		0					spline 0.0 0.3	
+	Animate	FindAGameButton			ypos		480					spline 0.0 0.3
+	Animate	ResumeGameButton		ypos		480					spline 0.0 0.3
+	Animate	CasualButton			ypos		480					spline 0.0 0.3
+	Animate	CompetitiveButton		ypos		480					spline 0.0 0.3
+	Animate	MvMButton				ypos		480					spline 0.0 0.3
+	Animate	OpenServerBrowserButton	ypos		480					spline 0.0 0.3
+	Animate	ReloadButton			ypos		480					spline 0.0 0.3
+	Animate	WatchStreamButton		ypos		480					spline 0.0 0.3
+	Animate	QuestLogButtonHud		ypos		480					spline 0.0 0.3
+	Animate	MOTD_ShowButtonPanel	ypos		480					spline 0.0 0.3
+	Animate	DisconnectButton		ypos		480					spline 0.0 0.3
+	Animate	QuitButton				ypos		480					spline 0.0 0.3
+	Animate	Notifications_ShowButtonPanel			ypos		480	spline 0.0 0.3
+
+	FireCommand 0 "soundentry Panel.SlideDown"
+}
+
+event MMenu_PlayList_Collapse
+{
+	Animate	SidebarContainer		xpos		-142				Spline 0.0 0.3
+	Animate	AchievementsButton		xpos		-32				Spline 0.0 0.3
+	
+	Animate	TopBarContainer			ypos		-480				spline 0.0 0.3
+	Animate	FindAGameButton			ypos		0					spline 0.0 0.3
+	Animate	ResumeGameButton		ypos		0					spline 0.0 0.3
+	Animate	CasualButton			ypos		0					spline 0.0 0.3
+	Animate	CompetitiveButton		ypos		0					spline 0.0 0.3
+	Animate	MvMButton				ypos		0					spline 0.0 0.3
+	Animate	OpenServerBrowserButton	ypos		0					spline 0.0 0.3
+	Animate	ReloadButton			ypos		0					spline 0.0 0.3
+	Animate	WatchStreamButton		ypos		0					spline 0.0 0.3
+	Animate	QuestLogButtonHud		ypos		0					spline 0.0 0.3
+	Animate	MOTD_ShowButtonPanel	ypos		0					spline 0.0 0.3
+	Animate	DisconnectButton		ypos		0					spline 0.0 0.3
+	Animate	QuitButton				ypos		0					spline 0.0 0.3
+	Animate	Notifications_ShowButtonPanel			ypos		0	spline 0.0 0.3
+
+	FireCommand 0 "soundentry Panel.SlideUp"
+}
+
+event MMenu_PlayList_Collapse_Immediate
+{
+	Animate	SidebarContainer		xpos		-142				Spline 0.0 0.0
+	Animate	AchievementsButton		xpos		-32					Spline 0.0 0.0
+
+	Animate	TopBarContainer			ypos		-480				spline 0.0 0.0
+	Animate	FindAGameButton			ypos		0					spline 0.0 0.0
+	Animate	ResumeGameButton		ypos		0					spline 0.0 0.0
+	Animate	CasualButton			ypos		0					spline 0.0 0.0
+	Animate	CompetitiveButton		ypos		0					spline 0.0 0.0
+	Animate	MvMButton				ypos		0					spline 0.0 0.0
+	Animate	OpenServerBrowserButton	ypos		0					spline 0.0 0.0
+	Animate	ReloadButton			ypos		0					spline 0.0 0.0
+	Animate	WatchStreamButton		ypos		0					spline 0.0 0.0
+	Animate	QuestLogButtonHud		ypos		0					spline 0.0 0.0
+	Animate	MOTD_ShowButtonPanel	ypos		0					spline 0.0 0.0
+	Animate	DisconnectButton		ypos		0					spline 0.0 0.0
+	Animate	QuitButton				ypos		0					spline 0.0 0.0
+	Animate	Notifications_ShowButtonPanel			ypos		0	spline 0.0 0.0
+}
+
+//===========================================
+
+event CompetitiveGame_LowerChatWindow
+{
+//	Animate HudChat ypos r140 Accel 0 0
+}
+
+event CompetitiveGame_RestoreChatWindow
+{
+//	Animate HudChat ypos 245 Accel 0 0
+}
+
+event HudTournament_MoveChatWindow
+{
+	RunEvent CompetitiveGame_LowerChatWindow 0
+	RunEvent CompetitiveGame_RestoreChatWindow 10
+}
+
+//===========================================

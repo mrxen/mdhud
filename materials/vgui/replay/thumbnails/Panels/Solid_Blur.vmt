@@ -1,0 +1,9 @@
+"Refract"
+{
+	"$refractamount"	"0"
+	"$refracttint"		"{255 255 255}"
+	"$refractblur" 		"1.0"
+	"$bluramount"		"2"
+	"$scale" 			"[1 1]"
+	"$normalmap"		"vgui/replay/thumbnails/Panels/Solid"
+}
