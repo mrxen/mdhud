@@ -1,37 +1,5 @@
 "Resource/HudLayout.res"
 {
-	"Crosshair"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"Crosshair"
-		"xpos"					"cs-0.5"
-		"ypos"					"cs-0.5"
-		"zpos"					"-1"
-		"wide"					"28"
-		"tall"	 				"28"
-		"visible"				"0"
-		"enabled"				"0"
-		"image"					"replay/thumbnails/Crosshairs/seeker"
-		"drawcolor"				"255 255 255 255"
-		"scaleImage"			"1"
-	}
-
-	"Crosshair2"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"Crosshair2"
-		"xpos"					"cs-0.5"
-		"ypos"					"cs-0.5"
-		"zpos"					"-1"
-		"wide"					"28"
-		"tall"	 				"28"
-		"visible"				"0"
-		"enabled"				"0"
-		"image"					"replay/thumbnails/Crosshairs/dot"
-		"drawcolor"				"0 255 255 255"
-		"scaleImage"			"1"
-	}
-
 
 	HudPlayerStatus
 	{
@@ -251,7 +219,7 @@
 		"xpos"					"c-126"
 		"ypos"					"285"
 		"wide"				 	"252"
-		"tall"				 	"30"
+		"tall"				 	"26"
 		"priority"				"40"
 	}
 	
@@ -263,7 +231,7 @@
 		"xpos"					"c-126"
 		"ypos"					"394"
 		"wide"	 				"252"
-		"tall"				 	"30"
+		"tall"				 	"26"
 		"priority"				"40"
 		
 		"x_offset"			 	"0"
@@ -278,7 +246,7 @@
 		"xpos"					"c-126"
 		"ypos"					"375"
 		"wide"	 				"252"
-		"tall"				 	"30"
+		"tall"				 	"26"
 		"priority"				"35"
 	}
 	
@@ -454,11 +422,11 @@
 		"tall"	 				"468"
 		"MaxDeathNotices"		"4"
 		"IconScale"	 			"0.35"
-		"LineHeight"	 		"14"
+		"LineHeight"	 		"16"
 		"LineSpacing"	 		"0"
-		"CornerRadius"	 		"3"
+		"CornerRadius"	 		"2"
 		"RightJustify"	 		"1"			// If 1, draw notices from the right
-		"TextFont"				"RobotoBlack11"
+		"TextFont"				"RobotoBold11"
 		"TeamBlue"				"Blue"
 		"TeamRed"				"Red"
 		"IconColor"				"White"

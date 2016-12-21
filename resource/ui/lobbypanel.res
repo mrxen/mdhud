@@ -190,13 +190,14 @@
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"SearchActiveGroupBox"
-		"xpos"					"cs-1+35"
-		"ypos"					"r416"
+		"xpos"					"0"
+		"ypos"					"rs1"
 		"zpos"					"100"
-		"wide"					"282"
+		"wide"					"p0.7"
 		"tall"					"300"
 		"visible"				"1"
-		"border"				"BoxLighter"
+		"border"				"noBorder"
+		"bgcolor_override"		"BoxLighter"
 
 		"SearchActiveTitle"
 		{

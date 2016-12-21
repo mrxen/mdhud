@@ -48,9 +48,9 @@ event HudHealthBonusPulseStop
 //Health Dying Pulse
 event HudHealthDyingPulse
 {
-	Animate PlayerStatusHealthValue		Fgcolor		"Red"			Linear 0.0 0.0
-	Animate PlayerStatusHealthValue		Fgcolor		"DarkRed"		Linear 0.0 0.5
-	Animate PlayerStatusHealthValue		Fgcolor		"Red"			Linear 0.5 0.5
+	Animate PlayerStatusHealthValue		Fgcolor		"Hurt"			Linear 0.0 0.0
+	Animate PlayerStatusHealthValue		Fgcolor		"HurtDark"		Linear 0.0 0.5
+	Animate PlayerStatusHealthValue		Fgcolor		"Hurt"			Linear 0.5 0.5
 	
 	Animate PlayerStatusHealthValueBg	alpha		"0"				Linear 0.0 0.0
 	Animate PlayerStatusHealthValueBgHurt	alpha	"255"			Linear 0.0 0.0

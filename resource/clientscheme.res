@@ -50,6 +50,8 @@ Scheme
 		"FlatButtonBgArmed"			"153 153 153 102"				// Flat button armed background colour
 		"FlatButtonFg_Light"		"255 255 255 255"				// Lighter alternative to the flat buttons
 		"FlatButtonBgArmed_Light"	"204 204 204 64"				// ^^^
+		"FlatButtonFg_Green"		"76 175 80 255"					// Green alternative to the flat buttons
+		"FlatButtonBgArmed_Green"	"76 175 80 102"					// ^^^
 
 				
 		// ----------------------------------------------------------
@@ -68,7 +70,8 @@ Scheme
 		"Buff"						"0 230 118 255"					// Buff colour
 		"BuffDark"					"0 200 83 255"					// Darker buff colour
 		"TargetIDBuff"				"39 174 96 255"					// Target id buff colour
-		"Hurt"						"255 23 68 255"					// Hurt colour
+		"Hurt"						"244 67 54 255"					// Hurt colour
+		"HurtDark"					"211 47 47 255"					// Darker hurt colour
 		"TargetIDHurt"				"230 126 34 255"				// Target id hurt colour
 
 		"Damage"					"76 175 80 255"					// Damage text colour
@@ -99,8 +102,8 @@ Scheme
 		"Orange"					"255 152 0 255"
 		"OrangeDim"					"245 124 0 255"
 		"LightOrange"				"255 167 38 255"
-		"GoalOrange"				"255 152 0 255"
-		"TFOrange"					"255 152 0 255"
+		"GoalOrange"				"244 67 54 255"
+		"TFOrange"					"244 67 54 255"
 
 		"QuestGold"						"253 216 53 255"
 		"HalloweenThemeColor2015_Light"	"238 126 17 255"
@@ -120,20 +123,20 @@ Scheme
 		"Green"						"76 175 80 255"
 
 		
-		"Black"						"50 55 65 255"
-		"TransparentBlack"			"50 55 65 255"
-		"TransparentLightBlack"		"50 55 65 255"
-		"FooterBGBlack"				"50 55 65 255"
+		"Black"						"40 50 60 255"
+		"TransparentBlack"			"40 50 60 255"
+		"TransparentLightBlack"		"40 50 60 255"
+		"FooterBGBlack"				"40 50 60 255"
 		
 		"HUDBlueTeam"				"33 150 243 255"
 		"HUDRedTeam"				"244 67 54 255"
-		"HUDSpectator"				"50 55 65 255"
+		"HUDSpectator"				"40 50 60 255"
 		"HUDBlueTeamSolid"			"33 150 243 255"
 		"HUDRedTeamSolid"			"244 67 54 255"
 		"HUDDeathWarning"			"244 67 54 255"
 		"HudWhite"					"229 231 235 255"
 		"HudOffWhite"				"229 231 235 255"
-		"HudBlack"					"50 55 65 255"
+		"HudBlack"					"40 50 60 255"
 		"ProgressBarBlue"			"25 118 210 255"
 		
 		"CreditsGreen"				"76 175 80 255"
@@ -144,9 +147,9 @@ Scheme
 		"ForTesting_Magenta"		"255 0 255 255"
 		"ForTesting_MagentaDim"		"255 0 255 120"
 
-		"HudPanelForeground"		"50 55 65 255"
+		"HudPanelForeground"		"40 50 60 255"
 		"HudPanelBackground"		"20 20 20 255"
-		"HudPanelBorder"			"50 55 65 255"
+		"HudPanelBorder"			"40 50 60 255"
 
 		"HudProgressBarActive"		"240 207 78 255"
 		"HudProgressBarInActive"	"140 120 73 255"
@@ -162,7 +165,7 @@ Scheme
 		
 		"TanDark"					"117 117 117 255"
 		"TanLight"					"229 231 235 255"
-		"TanDarker"					"50 55 65 255"
+		"TanDarker"					"40 50 60 255"
 		
 		"StoreDarkTan"				"117 117 117 255"
 		"StoreGreen"				"76 175 80 255"
@@ -183,7 +186,7 @@ Scheme
 		"DisguiseMenuIconBlue"		"25 118 210 255"
 
  		"MatchmakingDialogTitleColor"			"229 231 235 255"
- 		"MatchmakingMenuItemBackground"			"50 55 65 255"
+ 		"MatchmakingMenuItemBackground"			"40 50 60 255"
  		"MatchmakingMenuItemBackgroundActive"	"150 71 0 255"	
 		"MatchmakingMenuItemTitleColor"			"200 184 151 255"
 		"MatchmakingMenuItemDescriptionColor"	"200 184 151 255"
@@ -323,10 +326,10 @@ Scheme
 		CheckButton.TextColor				"Secondary_Text"
 		CheckButton.SelectedTextColor		"Primary_Text"
 		CheckButton.BgColor					"0 0 0 200"
-		CheckButton.Border1  				"Blank" 					// the left checkbutton border
-		CheckButton.Border2  				"Blank"						// the right checkbutton border
-		CheckButton.Check					"Accent"					// color of the check itself
-		CheckButton.HighlightFgColor		"Primary_Text"				// when the label is hovered over
+		CheckButton.Border1  				"Primary" 						// the left checkbutton border
+		CheckButton.Border2  				"Primary"						// the right checkbutton border
+		CheckButton.Check					"Primary"						// color of the check itself
+		CheckButton.HighlightFgColor		"Primary_Text"					// when the label is hovered over
 		
 		ComboBoxButton.ArrowColor			"White"
 		ComboBoxButton.ArmedArrowColor		"White"
@@ -12374,7 +12377,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Roboto Bold"
+				"name"			"Roboto Medium"
 				"tall"			"22"
 				"antialias" 	"1"
 				"blur"			"2"
@@ -12528,7 +12531,7 @@ Scheme
 			"1"
 			{
 				"name"			"Entypo"
-				"tall"			"28"
+				"tall"			"25"
 				"antialias" 	"1"
 			}
 		}
@@ -12538,7 +12541,17 @@ Scheme
 			"1"
 			{
 				"name"			"Roboto Bold"
-				"tall"			"12"
+				"tall"			"13"
+				"antialias" 	"1"
+			}
+		}
+
+		"mMenuTextLarge"
+		{
+			"1"
+			{
+				"name"			"Roboto Medium"
+				"tall"			"22"
 				"antialias" 	"1"
 			}
 		}
@@ -15256,12 +15269,26 @@ Scheme
 			"draw_corner_height" 	"4"
 		}
 
+		DarkBlue
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"DarkBlue"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
 		ShadowlessBlue
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
 			"image"					"replay/thumbnails/Panels/ShadowlessBlue"
+			"color"					"Blue"
 			"src_corner_height"		"26"
 			"src_corner_width"		"26"
 			"draw_corner_width"		"4"
@@ -15280,12 +15307,52 @@ Scheme
 			"draw_corner_height" 	"4"
 		}
 
+		DarkRed
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"DarkRed"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
 		ShadowlessRed
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
 			"image"					"replay/thumbnails/Panels/ShadowlessRed"
+			"color"					"Red"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
+		Green
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"Green"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
+		DarkGreen
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"DarkGreen"
 			"src_corner_height"		"26"
 			"src_corner_width"		"26"
 			"draw_corner_width"		"4"

@@ -308,7 +308,7 @@
 					"xpos"			"0"
 					"ypos"			"cs-0.5"
 					"wide"			"f0"
-					"tall"			"2"
+					"tall"			"3"
 					"proportionaltoparent"	"1"
 
 					"ProgressBar"
@@ -336,8 +336,13 @@
 						"tall"					"f0"
 						"proportionaltoparent"	"1"
 						"progress"				"0"
-						"fgcolor_override"		"Accent_Dark"
-						"bgcolor_override"		"Accent_Light"
+						"fgcolor_override"		"Green"
+						"bgcolor_override"		"Black"
+						
+						"if_mini"
+						{
+							"bgcolor_override"	"BoxLight"
+						}
 					}
 
 					"Frame"

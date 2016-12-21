@@ -57,29 +57,14 @@
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"GameModesContainer"
-		"xpos"					"cs-0.5+141"
-		"ypos"					"r400"
+		"xpos"					"0"
+		"ypos"					"0"
 		"zpos"					"100"
-		"wide"					"386"
-		"tall"					"340"
+		"wide"					"p0.7"
+		"tall"					"f0"
 		"visible"				"1"
 		"border"				"noBorder"
-		
 		"proportionaltoparent"	"1"
-
-		"PlaylistBGPanelColor"
-		{
-			"ControlName"			"EditablePanel"
-			"fieldName"				"PlaylistBGPanelColor"
-			"xpos"					"cs-0.5"
-			"ypos"					"cs-0.5+5"
-			"zpos"					"-3"
-			"wide"					"366"
-			"tall"					"320"
-			"visible"				"1"
-			"border"				"BoxLighter"
-			"proportionaltoparent"	"1"
-		}
 
 		"PlaylistBGPanelTitle"
 		{
@@ -90,7 +75,7 @@
 			"zpos"					"-2"
 			"wide"					"f0"
 			"tall"					"46"
-			"visible"				"1"
+			"visible"				"0"
 			"labeltext"				"Casual"
 			"textalignment"			"center"
 			"font"					"RobotoMedium15"
@@ -104,18 +89,18 @@
 		{
 			"ControlName"			"EditablePanel"
 			"fieldName"				"PlaylistBGPanel"
-			"xpos"					"cs-0.5"
-			"ypos"					"cs-0.5"
+			"xpos"					"0"
+			"ypos"					"0"
 			"zpos"					"-1"
-			"wide"					"351"		// p0.96
-			"tall"					"317"		// p0.96
+			"wide"					"f0"
+			"tall"					"f0"
 			"visible"				"1"
 			"PaintBackgroundType"	"2"
 			"border"				"noBorder"
 			"proportionaltoparent"	"1"
 			"pinCorner"				"2"
 			"autoResize"			"1"
-			"bgcolor_override"		"blank"
+			"bgcolor_override"		"BoxLighter"
 
 			"RestoreCasualSearchCriteria"
 			{
@@ -243,7 +228,7 @@
 			{
 				"ControlName"			"Label"
 				"fieldName"				"Title"
-				"xpos"					"3"
+				"xpos"					"7"
 				"ypos"					"119"
 				"zpos"					"0"
 				"wide"					"f0"
@@ -260,7 +245,7 @@
 			{
 				"ControlName"			"Label"
 				"fieldName"				"SelectedCount"
-				"xpos"					"rs1-3"
+				"xpos"					"rs1-7"
 				"ypos"					"119"
 				"zpos"					"0"
 				"wide"					"f0"
@@ -297,10 +282,10 @@
 				"ControlName"			"EditablePanel"
 				"fieldName"				"PlayListDropShadow"
 				"xpos"					"cs-0.5"
-				"ypos"					"rs1"
+				"ypos"					"140"
 				"zpos"					"100"
-				"wide"					"f0"
-				"tall"					"180"
+				"wide"					"p0.98"
+				"tall"					"260"
 				"visible"				"1"
 				"PaintBackgroundType"	"2"
 				"border"				"InnerShadowBorderThin"
@@ -313,9 +298,9 @@
 				"ControlName"			"CScrollableList"
 				"fieldName"				"GameModesList"
 				"xpos"					"cs-0.5"
-				"ypos"					"rs1"
-				"wide"					"f0"
-				"tall"					"180"
+				"ypos"					"140"
+				"wide"					"p0.98"
+				"tall"					"260"
 				"visible"				"1"
 				"proportionaltoparent"	"1"
 				"restrict_width" 		"0"
@@ -335,21 +320,21 @@
 
 					"Slider"
 					{
-						"fgcolor_override"		"White"
+						"fgcolor_override"		"Primary_Text_Light"
 					}
 		
 					"UpButton"
 					{
 						"ControlName"			"Button"
 						"FieldName"				"UpButton"
-						"visible"				"0"
+						"visible"				"1"
 					}
 		
 					"DownButton"
 					{
 						"ControlName"			"Button"
 						"FieldName"				"DownButton"
-						"visible"				"0"
+						"visible"				"1"
 					}
 				}
 			}

@@ -63,85 +63,17 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"PlayerStatusHealthValue"
+		"font"					"RobotoMedium24"
 		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"5"
-		"wide"					"p1"
-		"tall"					"p1"
-		"visible"				"0"
-		"enabled"				"1"
-		"labelText"				"%Health%"
-		"textAlignment"			"center"	
-		"font"					"RobotoBlack18"
-		"fgcolor"				"Health"
-		"textinsety"			"4"
-		"proportionaltoparent"	"1"
-	}
-	
-	"SpectatorHealth"
-	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"SpectatorHealth"
-		"xpos"					"0"
-		"ypos"					"5"
-		"zpos"					"6"
-		"wide"					"32"
-		"tall"					"23"
+		"ypos"					"c-30"
+		"zpos"					"1"
+		"wide"					"77"
+		"tall"					"f0"
 		"visible"				"1"
 		"enabled"				"1"
 		"labelText"				"%Health%"
-		"textAlignment"			"center"	
-		"font"					"RobotoBold16"
-		"fgcolor"				"White"
-		"proportionaltoparent"	"1"
-	}
-	
-	"PlayerStatusHealthValueBg"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"PlayerStatusHealthValueBg"
-		"xpos"					"0"
-		"ypos"					"3"
-		"zpos"					"5"
-		"wide"					"32"
-		"tall"					"23"
-		"visible"				"1"
-		"enabled"				"1"
-		"border"				"DarkestPanel"
-		"proportionaltoparent"	"1"
-	}
-
-	"PlayerStatusHealthValueBgBuff"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"PlayerStatusHealthValueBgBuff"
-		"xpos"					"0"
-		"ypos"					"3"
-		"zpos"					"6"
-		"wide"					"32"
-		"tall"					"23"
-		"visible"				"1"
-		"enabled"				"1"
-		"border"				"TargetIDBuff"
-		"proportionaltoparent"	"1"
-		"alpha"					"0"
-	}
-
-	"PlayerStatusHealthValueBgHurt"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"PlayerStatusHealthValueBgHurt"
-		"xpos"					"0"
-		"ypos"					"3"
-		"zpos"					"6"
-		"wide"					"32"
-		"tall"					"23"
-		"visible"				"1"
-		"enabled"				"1"
-		"border"				"TargetIDHurt"
-		"proportionaltoparent"	"1"
-		"alpha"					"0"
-	}
+		"textAlignment"			"North-East"
+	}	
 		
 	"PlayerStatusPlayerLevel"
 	{

@@ -19,8 +19,8 @@
 		"teambg_3"				"replay/thumbnails/Panels/Blue"
 		"src_corner_height"		"26"
 		"src_corner_width"		"26"
-		"draw_corner_width"		"7"
-		"draw_corner_height" 	"7"
+		"draw_corner_width"		"4"
+		"draw_corner_height" 	"4"
 		"drawcolor"				"White"
 	}
 
@@ -41,8 +41,8 @@
 		"scaleImage"			"1"
 		"src_corner_height"		"26"
 		"src_corner_width"		"26"
-		"draw_corner_width"		"5"
-		"draw_corner_height" 	"5"
+		"draw_corner_width"		"4"
+		"draw_corner_height" 	"4"
 		"proportionaltoparent"	"1"
 		"drawcolor"				"White"
 	}
@@ -64,8 +64,8 @@
 		"scaleImage"			"1"
 		"src_corner_height"		"26"
 		"src_corner_width"		"26"
-		"draw_corner_width"		"5"
-		"draw_corner_height" 	"5"
+		"draw_corner_width"		"4"
+		"draw_corner_height" 	"4"
 		"proportionaltoparent"	"1"
 		"drawcolor"				"White"
 	}

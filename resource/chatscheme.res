@@ -375,7 +375,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Roboto Medium"
+				"name"			"Roboto Bold"
 				"antialias"		"1"
 				"tall"			"14"
 				"dropshadow"	"0"
@@ -384,7 +384,7 @@ Scheme
 
 			"2"
 			{
-				"name"			"Roboto Medium"
+				"name"			"Roboto Bold"
 				"antialias"		"1"
 				"tall"			"16"
 				"dropshadow"	"0"
@@ -393,7 +393,7 @@ Scheme
 
 			"3"
 			{
-				"name"			"Roboto Medium"
+				"name"			"Roboto Bold"
 				"antialias"		"1"
 				"tall"			"18"
 				"dropshadow"	"0"

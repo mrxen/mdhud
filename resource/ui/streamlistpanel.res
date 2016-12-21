@@ -17,7 +17,7 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"HeaderLabel"
-			"font"					"RobotoRegular17"
+			"font"					"mMenuText"
 			"textAlignment"			"center"
 			"labelText"				"Streams"
 			"xpos"					"0"
