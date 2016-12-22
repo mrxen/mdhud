@@ -2862,6 +2862,19 @@ Scheme
 				"custom"	"1"
 			}
 		}
+		
+		"MapVotesPercentage"
+		{
+			"1"
+			{
+				"name"		"Roboto Medium"
+				"tall"		"12"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"dropshadow"	"1"
+			}
+		}
 
 	//////////////////// CUSTOM FONTS //////////////////////////////
 	// Roboto
@@ -15182,19 +15195,45 @@ Scheme
 			"draw_corner_width"		"4"
 			"draw_corner_height" 	"4"	
 		}
-
-		DarkPanel
+		
+		ShadowlessBasePanel
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
-			"image"					"replay/thumbnails/Panels/DarkPanel"
+			"image"					"replay/thumbnails/Panels/BasePanel"
 
 			"src_corner_height"		"26"
 			"src_corner_width"		"26"
 			"draw_corner_width"		"4"
 			"draw_corner_height" 	"4"	
 		}
+
+		DarkPanel
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			"image"					"replay/thumbnails/Panels/BasePanel"
+			
+			"color"					"Grey"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"	
+		}
 		
+		ShadowlessDarkPanel
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			"image"					"replay/thumbnails/Panels/ShadowlessBasePanel"
+			
+			"color"					"Grey"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"	
+		}
+
 		VeryDarkPanel
 		{
 			"bordertype"			"scalable_image"
@@ -15212,6 +15251,19 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"Black"
+
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"	
+		}
+
+		ShadowlessDarkestPanel
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			"image"					"replay/thumbnails/Panels/ShadowlessBasePanel"
 			"color"					"Black"
 
 			"src_corner_height"		"26"
@@ -15346,12 +15398,38 @@ Scheme
 			"draw_corner_height" 	"4"
 		}
 
+		ShadowlessGreen
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/ShadowlessBasePanel"
+			"color"					"Green"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
 		DarkGreen
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
 			"image"					"replay/thumbnails/Panels/BasePanel"
+			"color"					"DarkGreen"
+			"src_corner_height"		"26"
+			"src_corner_width"		"26"
+			"draw_corner_width"		"4"
+			"draw_corner_height" 	"4"
+		}
+
+		ShadowlessDarkGreen
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/Panels/ShadowlessBasePanel"
 			"color"					"DarkGreen"
 			"src_corner_height"		"26"
 			"src_corner_width"		"26"
@@ -15464,12 +15542,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Accent"
+					"color"	"blank" 	// "Accent"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "Accent"
+					"color"	"blank" 	// "Accent"
 					"offset" "0 0"
 				}
 			}
@@ -15483,12 +15561,12 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Accent"
+					"color"	"blank" 	// "Accent"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "Accent"
+					"color"	"blank" 	// "Accent"
 					"offset" "0 0"
 				}
 			}

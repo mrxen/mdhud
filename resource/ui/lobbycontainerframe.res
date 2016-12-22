@@ -162,6 +162,50 @@
 		}
 	}
 
+	"OptionsButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"OptionsButton"
+		"xpos"					"rs1-30"
+		"ypos"					"0"
+		"zpos"					"11"
+		"wide"					"30"
+		"tall"					"30"
+		"visible"				"1"
+		"enabled"				"1"
+		"font"					"mMenuIcons"
+		"textAlignment"			"center"
+		"labelText"				"@"
+		"font"					"mMenuIcons"
+		"textAlignment"			"center"
+		"Command"				"options"
+		"paintbackground"		"0"
+		"sound_depressed"		"UI/buttonclick.wav"
+		"sound_released"		"UI/buttonclickrelease.wav"
+		"NavUp"					"PlayNowButton"
+		"NavRight"				"LearnMoreButton"
+		"defaultFgColor_override"	"Inactive_Icon"
+		"armedFgColor_override"		"Active_Icon"
+		"depressedFgColor_override"	"Active_Icon"	
+
+		"image_drawcolor"	"235 226 202 0"
+		"image_armedcolor"	"235 226 202 0"
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"2"
+			"ypos"			"2"
+			"zpos"			"1"
+			"wide"			"16"
+			"tall"			"16"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"glyph_options"
+			"scaleImage"	"1"
+		}
+	}
+
 	"BackButton"
 	{
 		"ControlName"			"CExButton"

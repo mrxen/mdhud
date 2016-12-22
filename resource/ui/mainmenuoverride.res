@@ -289,36 +289,6 @@
 //		{
 //			"image"		"../console/title_invasion"
 //		}
-
-		if_meet_your_match_0
-		{
-			"xpos"		"rs1"
-//			"image"		"../console/title_team_heavy01_blu_widescreen"
-			"image"		"replay/thumbnails/Backgrounds/London_City"
-		}
-		if_meet_your_match_1
-		{
-			"xpos"		"rs1"
-//			"image"		"../console/title_team_heavy01_red_widescreen"
-			"image"		"replay/thumbnails/Backgrounds/London_City"
-		}
-		if_meet_your_match_2
-		{
-			"xpos"		"rs1"
-//			"image"		"../console/title_team_pyro01_blu_widescreen"
-			"image"		"replay/thumbnails/Backgrounds/London_City"
-		}
-		if_meet_your_match_3
-		{
-			"xpos"		"rs1"
-//			"image"		"../console/title_team_pyro01_red_widescreen"
-			"image"		"replay/thumbnails/Backgrounds/London_City"
-		}
-		if_meet_your_match_4
-		{
-//			"image"		"../console/title_team_competitive_widescreen"
-			"image"		"replay/thumbnails/Backgrounds/London_City"
-		}
 	}
 					
 	"TFLogoImage"
@@ -340,47 +310,6 @@
 //		{
 //			"image"		"../logo/tough_break_logo"
 //		}
-
-		if_meet_your_match_0
-		{
-			"xpos"			"c-300"
-			"ypos"			"0"
-			"wide"			"o2"
-			"tall"			"145"
-			"image"		"../logo/meet_your_match_logo"
-		}
-		if_meet_your_match_1
-		{
-			"xpos"			"c-300"
-			"ypos"			"0"
-			"wide"			"o2"
-			"tall"			"145"
-			"image"		"../logo/meet_your_match_logo"
-		}
-		if_meet_your_match_2
-		{
-			"xpos"			"c-300"
-			"ypos"			"0"
-			"wide"			"o2"
-			"tall"			"145"
-			"image"		"../logo/meet_your_match_logo"
-		}
-		if_meet_your_match_3
-		{
-			"xpos"			"c-300"
-			"ypos"			"0"
-			"wide"			"o2"
-			"tall"			"145"
-			"image"		"../logo/meet_your_match_logo"
-		}
-		if_meet_your_match_4
-		{
-			"xpos"			"c-300"
-			"ypos"			"0"
-			"wide"			"o2"
-			"tall"			"145"
-			"image"		"../logo/meet_your_match_logo"
-		}
 	}	
 	
 	"TFCharacterImage"
